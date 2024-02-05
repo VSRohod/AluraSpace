@@ -1,0 +1,53 @@
+in cmd
+-To get Pip
+>curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+>python get-pip.py
+
+-To install virtualenv
+>pip install virtualenv
+
+-Test if everything is okay! Try see the version
+>python3 --version
+>virtualenv --version
+
+-To install venv
+>virtualenv venv
+
+*in case PowerShell don't allow scripts
+>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+-Install Django
+> pip install django
+
+-See dependencies
+>pip freeze
+>pip freeze > requirements.txt
+
+-Django commands
+>django_admin help
+
+-Django start project
+>django-admin startproject setup .
+
+*Select Python From venv
+-ctrl + shift + p
+-python select interpreter
+-python venv
+
+-Run server
+>python manage.py runserver
+
+-Package to proctect the secret key
+>pip install python_dotenv
+-put in .env the secret key
+-modify the seetings like this
+"from pathlib import Path, os
+from dotenv import load_dotenv
+
+load_dotenv()"
+
+-in settings
+"SECRET_KEY = str(os.getenv('SECRET_KEY'))"
+
+
+
