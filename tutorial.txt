@@ -49,5 +49,14 @@ load_dotenv()"
 -in settings
 "SECRET_KEY = str(os.getenv('SECRET_KEY'))"
 
+-If you have to try one aplication
+>startapp
+-If you have to try the entire project
+>startproject
+
+-url pattern help to organizate all the routs in project!
+
+-to collect static resources type:
+>python manage.py collectstatic 
 
 
