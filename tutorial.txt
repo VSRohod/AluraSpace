@@ -59,4 +59,8 @@ load_dotenv()"
 -to collect static resources type:
 >python manage.py collectstatic 
 
+-in models to make a db you have to make
+>makemigrations after db lines
+>migrate to do
+
 
